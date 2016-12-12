@@ -16,7 +16,12 @@ public class Planet : MonoBehaviour {
 	{
 		BuildPlanet();
 	}
-	
+
+    private void Update() {
+        transform.Rotate(transform.forward);
+    }
+
+    
 
 	void BuildPlanet() 
 	{
